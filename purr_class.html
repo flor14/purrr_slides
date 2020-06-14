@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>automatized files management</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Florencia D’Andrea" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# automatized files management
+## 15’ class for the RStudio certification
+### Florencia D’Andrea
+### <span class="citation">@cantoflor_87</span>
+
+---
+
+
+
+
+
+
+class: center, middle
+
+# Iteration with purrr package
+
+### for automatized files management
+
+---
+class: inverse, center, middle
+
+### 1. Obtain a dataframe from multiple files
+ 
+### 2. Automatize report generation
+
+
+---
+class: inverse, center, middle
+
+### &lt;span style="color: #f2cc9d;"&gt;1. Obtain a dataframe from multiple files&lt;/span&gt; 
+ 
+### 2. Automatize report generation
+
+---
+
+### Read files using `map_df()`
+
+&lt;img src="1_eng.png" width="1248" 400 /&gt;
+
+---
+
+### Read files using `map_df()`
+
+&lt;img src="2_eng.png" width="1611" /&gt;
+
+---
+
+### Read files using `map_df()`
+
+&lt;img src="3_eng.png" width="1535" /&gt;
+---
+# Let’s practise
+### Which function would you use to obtain these return values?
+
+1. `map()`
+2. `map_df()`
+3. `map_chr()`
+
+
+&lt;img src="4_eng.png" width="1743" /&gt;
+
+
+---
+class: inverse, center, middle
+
+# Live coding #1
+
+#### 1. Build a vector of *filenames* do you want to iterate over
+#### 2. Select a *function* to read the files 
+#### 3. Check the number of *arguments* the function need
+#### 4. Select among `map()`/`map2()`/`pmap()`
+#### 5. Select `map_*()` suffix in relation of the *desired output*
+
+File xxx in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
+
+---
+
+class: inverse, center, middle
+
+### 1. Obtain a dataframe from multiple files
+ 
+### 2. Automatize report generation 
+---
+
+class: inverse, center, middle
+
+### 1. Obtain a dataframe from multiple files
+ 
+### &lt;span style="color: #f2cc9d;"&gt;2. Automatize report generation&lt;/span&gt; 
+---
+
+### Iterate using a function for its side effects
+
+&lt;img src="5_eng.png" width="1636" /&gt;
+
+---
+### `purrr::walk()` family of functions
+
+&lt;img src="6_eng.png" width="1121" /&gt;
+
+---
+
+# Let´s practise
+### Which of these functions you would use with walk() family of functions?
+1. `purrr::safely()`
+2. `~ggplot(., aes(mpg, wt)) + geom_point()`
+3. `rmarkdown::render()`
+4. `~list(name = .)`
+
+Can you explain your choice on using `map()` or `walk()` to iterate with these functions?
+---
+
+### RMarkdown
+
+&lt;img src="rmd.png" width="856" /&gt;
+
+---
+
+### RMarkdown Template file
+
+Add parameters 
+
+&lt;img src="yaml.png" width="968" /&gt;
+
+---
+
+### Automatization of report generation
+
+&lt;img src="7_eng.png" width="1596" /&gt;
+
+---
+
+### `pwalk()` function
+
+&lt;img src="final_scheme.png" width="1764" /&gt;
+
+---
+
+class: inverse, center, middle
+
+# Live coding #2
+
+File xxx in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>automatized files management</title>
+    <title>Automatized files managment</title>
     <meta charset="utf-8" />
     <meta name="author" content="Florencia D’Andrea" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -10,10 +10,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# automatized files management
-## 15’ class for the RStudio certification
+# Automatized files managment
+## 15’ class for the R-Studio Certification
 ### Florencia D’Andrea
-### <span class="citation">@cantoflor_87</span>
+### 🐦cantoflor_87
 
 ---
 
@@ -26,7 +26,9 @@ class: center, middle
 
 # Iteration with purrr package
 
-### for automatized files management
+### for automatized files management 
+
+### 📄🐱
 
 ---
 class: inverse, center, middle
@@ -39,7 +41,7 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-### &lt;span style="color: #f2cc9d;"&gt;1. Obtain a dataframe from multiple files&lt;/span&gt; 
+### 👉&lt;span style="color: #f2cc9d;"&gt;1. Obtain a dataframe from multiple files&lt;/span&gt; 
  
 ### 2. Automatize report generation
 
@@ -47,7 +49,7 @@ class: inverse, center, middle
 
 ### Read files using `map_df()`
 
-&lt;img src="1_eng.png" width="1248" 400 /&gt;
+&lt;img src="1_eng.png" width="800" /&gt;
 
 ---
 
@@ -60,8 +62,9 @@ class: inverse, center, middle
 ### Read files using `map_df()`
 
 &lt;img src="3_eng.png" width="1535" /&gt;
+
 ---
-# Let’s practise
+# Let’s practise 💪
 ### Which function would you use to obtain these return values?
 
 1. `map()`
@@ -75,15 +78,15 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-# Live coding #1
+# Live coding #1 💻
 
-#### 1. Build a vector of *filenames* do you want to iterate over
-#### 2. Select a *function* to read the files 
-#### 3. Check the number of *arguments* the function need
+#### 1. Build a vector of `filenames` do you want to iterate over
+#### 2. Select a `function` to read the files 
+#### 3. Check the number of `arguments` the function needs
 #### 4. Select among `map()`/`map2()`/`pmap()`
 #### 5. Select `map_*()` suffix in relation of the *desired output*
 
-File xxx in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
+File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
 
 ---
 
@@ -98,7 +101,7 @@ class: inverse, center, middle
 
 ### 1. Obtain a dataframe from multiple files
  
-### &lt;span style="color: #f2cc9d;"&gt;2. Automatize report generation&lt;/span&gt; 
+### 👉 &lt;span style="color: #f2cc9d;"&gt;2. Automatize report generation&lt;/span&gt; 
 ---
 
 ### Iterate using a function for its side effects
@@ -108,11 +111,11 @@ class: inverse, center, middle
 ---
 ### `purrr::walk()` family of functions
 
-&lt;img src="6_eng.png" width="1121" /&gt;
+&lt;img src="6_eng.png" width="500" /&gt;
 
 ---
 
-# Let´s practise
+# Let´s practise 💪
 ### Which of these functions you would use with walk() family of functions?
 1. `purrr::safely()`
 2. `~ggplot(., aes(mpg, wt)) + geom_point()`
@@ -122,9 +125,9 @@ class: inverse, center, middle
 Can you explain your choice on using `map()` or `walk()` to iterate with these functions?
 ---
 
-### RMarkdown
+### RMarkdown 🧶 
 
-&lt;img src="rmd.png" width="856" /&gt;
+&lt;img src="rmd.png" width="700" /&gt;
 
 ---
 
@@ -132,7 +135,7 @@ Can you explain your choice on using `map()` or `walk()` to iterate with these f
 
 Add parameters 
 
-&lt;img src="yaml.png" width="968" /&gt;
+&lt;img src="yaml.png" width="979" /&gt;
 
 ---
 
@@ -142,7 +145,7 @@ Add parameters
 
 ---
 
-### `pwalk()` function
+### `pwalk()` function 🧶😺
 
 &lt;img src="final_scheme.png" width="1764" /&gt;
 
@@ -150,18 +153,22 @@ Add parameters
 
 class: inverse, center, middle
 
-# Live coding #2
+# Live coding #2 💻
 
-File xxx in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
+Get your own series of reports!
+
+File `live_coding.R` in
+[![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/flor14-purrr_class-9j5af2ax/rstudio/)
 
 ---
+
 class: center, middle
 
 # Thanks!
 
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
+### 😺🧶😺🧶😺🧶
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

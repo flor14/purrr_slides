@@ -1,9 +1,9 @@
 ---
 title: "Automatized files managment"
-subtitle: "15' class for the RStudio certification"
+subtitle: "15' class for the R-Studio Certification"
 author: "Florencia D'Andrea"
-institute: "🐦@cantoflor_87"
-output
+institute: "🐦cantoflor_87"
+output:
   xaringan::moon_reader:
     css: xaringan-themer.css
     lib_dir: libs
@@ -35,7 +35,9 @@ class: center, middle
 
 # Iteration with purrr package
 
-### for automatized files management
+### for automatized files management 
+
+### 📄🐱
 
 ---
 class: inverse, center, middle
@@ -48,7 +50,7 @@ class: inverse, center, middle
 ---
 class: inverse, center, middle
 
-### <span style="color: #f2cc9d;">1. Obtain a dataframe from multiple files</span> 
+### 👉<span style="color: #f2cc9d;">1. Obtain a dataframe from multiple files</span> 
  
 ### 2. Automatize report generation
 
@@ -56,7 +58,7 @@ class: inverse, center, middle
 
 ### Read files using `map_df()`
 
-```{r one, echo = FALSE, out.extra=400}
+```{r one, echo = FALSE, out.width=800}
 knitr::include_graphics("1_eng.png")
 ```
 
@@ -75,8 +77,9 @@ knitr::include_graphics("2_eng.png")
 ```{r three, echo = FALSE}
 knitr::include_graphics("3_eng.png")
 ```
+
 ---
-# Let’s practise
+# Let’s practise 💪
 ### Which function would you use to obtain these return values?
 
 1. `map()`
@@ -92,15 +95,15 @@ knitr::include_graphics("4_eng.png")
 ---
 class: inverse, center, middle
 
-# Live coding #1
+# Live coding #1 💻
 
-#### 1. Build a vector of *filenames* do you want to iterate over
-#### 2. Select a *function* to read the files 
-#### 3. Check the number of *arguments* the function need
+#### 1. Build a vector of `filenames` do you want to iterate over
+#### 2. Select a `function` to read the files 
+#### 3. Check the number of `arguments` the function needs
 #### 4. Select among `map()`/`map2()`/`pmap()`
 #### 5. Select `map_*()` suffix in relation of the *desired output*
 
-File xxx in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
+File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
 
 ---
 
@@ -115,7 +118,7 @@ class: inverse, center, middle
 
 ### 1. Obtain a dataframe from multiple files
  
-### <span style="color: #f2cc9d;">2. Automatize report generation</span> 
+### 👉 <span style="color: #f2cc9d;">2. Automatize report generation</span> 
 ---
 
 ### Iterate using a function for its side effects
@@ -127,13 +130,13 @@ knitr::include_graphics("5_eng.png")
 ---
 ### `purrr::walk()` family of functions
 
-```{r six, echo = FALSE, fig.height=4}
+```{r six, echo = FALSE, out.width=500}
 knitr::include_graphics("6_eng.png")
 ```
 
 ---
 
-# Let´s practise
+# Let´s practise 💪
 ### Which of these functions you would use with walk() family of functions?
 1. `purrr::safely()`
 2. `~ggplot(., aes(mpg, wt)) + geom_point()`
@@ -143,9 +146,9 @@ knitr::include_graphics("6_eng.png")
 Can you explain your choice on using `map()` or `walk()` to iterate with these functions?
 ---
 
-### RMarkdown
+### RMarkdown 🧶 
 
-```{r rmark, echo = FALSE}
+```{r rmark, echo = FALSE, out.width=700}
 knitr::include_graphics("rmd.png")
 ```
 
@@ -170,7 +173,7 @@ knitr::include_graphics("7_eng.png")
 
 ---
 
-### `pwalk()` function
+### `pwalk()` function 🧶😺
 
 ```{r final, echo = FALSE}
 knitr::include_graphics("final_scheme.png")
@@ -180,15 +183,20 @@ knitr::include_graphics("final_scheme.png")
 
 class: inverse, center, middle
 
-# Live coding #2
+# Live coding #2 💻
 
-File xxx in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class.git/master)
+Get your own series of reports!
+
+File `live_coding.R` in
+[![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/flor14-purrr_class-9j5af2ax/rstudio/)
 
 ---
+
 class: center, middle
 
 # Thanks!
 
+### 😺🧶😺🧶😺🧶
+
 Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
 
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.org/knitr), and [R Markdown](https://rmarkdown.rstudio.com).

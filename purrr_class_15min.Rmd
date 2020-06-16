@@ -103,7 +103,7 @@ class: inverse, center, middle
 #### 4. Select among `map()`/`map2()`/`pmap()`
 #### 5. Select a `map_*()` suffix in relation to the *desired output*
 
-File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/flor14-purrr_class-cfjuzm9b/rstudio/)
+File `live_coding.R` in [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class/master?urlpath=rstudio)
 
 ---
 
@@ -188,7 +188,7 @@ class: inverse, center, middle
 Get your own series of reports!
 
 File `live_coding.R` in
-[![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke.mybinder.org/user/flor14-purrr_class-cfjuzm9b/rstudio/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/flor14/purrr_class/master?urlpath=rstudio)
 
 ---
 

@@ -72,7 +72,7 @@ knitr::include_graphics("2_eng.png")
 
 ---
 
-### Read files using `map_df()`
+### Return value: a dataframe
 
 ```{r three, echo = FALSE}
 knitr::include_graphics("3_eng.png")

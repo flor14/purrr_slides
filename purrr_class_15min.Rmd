@@ -1,5 +1,5 @@
 ---
-title: "Automatized files managment"
+title: "Automatized files management"
 subtitle: "15' class for the R-Studio Certification"
 author: "Florencia D'Andrea"
 institute: "🐦cantoflor_87"

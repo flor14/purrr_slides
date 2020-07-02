@@ -1,6 +1,6 @@
 ---
 title: "Automatized files management"
-subtitle: "15' class for the R-Studio Certification"
+subtitle: "15' class for the RStudio Certification"
 author: "Florencia D'Andrea"
 institute: "🐦cantoflor_87"
 output:
